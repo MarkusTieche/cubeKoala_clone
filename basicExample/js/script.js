@@ -2,21 +2,14 @@ var game;
 
 function init()
 {
-    game = new Phaser.Game(640, 960, Phaser.AUTO, '', { preload: preload, create: create,preRender:preRender, update: update });
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    
+    game = new Phaser.Game(w, h, Phaser.AUTO, '', { preload: preload, create: create,preRender:preRender, update: update });
 }
 
 function preload() 
 {
-    //SET UP STAGE
-    game.stage.backgroundColor ="#333";
-    game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    game.scale.setMinMax(320, 460, 640, 960);
-    game.scale.pageAlignHorizontally = true;
-    game.scale.pageAlignVertically = true;
-    this.scale.forceOrientation(true, false);
-    game.forceSingleUpdate = true;
-    
-    game.load.crossOrigin = true;
     //LOAD TILE MAP 
     game.load.tilemap('level_1', 'assets/Level_1.json', null, Phaser.Tilemap.TILED_JSON);
     //LOAD TILESET
