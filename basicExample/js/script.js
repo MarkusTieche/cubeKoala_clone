@@ -16,7 +16,7 @@ function preload()
     this.scale.forceOrientation(true, false);
     game.forceSingleUpdate = true;
     
-    
+    game.load.crossOrigin = true;
     //LOAD TILE MAP 
     game.load.tilemap('level_1', 'assets/level_1.json', null, Phaser.Tilemap.TILED_JSON);
     //LOAD TILESET
