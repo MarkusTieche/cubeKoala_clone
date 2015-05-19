@@ -125,7 +125,7 @@ function preRender()
 
 function update() 
 {
-    if(this.cursors.left.justDown)
+    if(this.cursors.right.justDown)
     {
         //ROTATE LEVEL
         game.world.angle +=45;
@@ -134,7 +134,7 @@ function update()
         game.physics.p2.gravity.x = Math.sin(game.world.rotation) * 100;
     };
     
-    if(this.cursors.right.justDown)
+    if(this.cursors.left.justDown)
     {
         //ROTATE LEVEL
         game.world.angle -=45;
