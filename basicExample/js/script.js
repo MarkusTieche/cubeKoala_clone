@@ -10,6 +10,7 @@ function init()
 
 function preload() 
 {
+    game.stage.backgroundColor ="#333";
     //LOAD TILE MAP 
     game.load.tilemap('level_1', 'assets/Level_1.json', null, Phaser.Tilemap.TILED_JSON);
     //LOAD TILESET
