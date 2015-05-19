@@ -18,7 +18,7 @@ function preload()
     
     game.load.crossOrigin = true;
     //LOAD TILE MAP 
-    game.load.tilemap('level_1', 'assets/level_1.json', null, Phaser.Tilemap.TILED_JSON);
+    game.load.tilemap('level_1', 'assets/Level_1.json', null, Phaser.Tilemap.TILED_JSON);
     //LOAD TILESET
     game.load.image('tiles', 'assets/TileSet.png');
 }
