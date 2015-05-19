@@ -10,7 +10,7 @@ function preload()
     //SET UP STAGE
     game.stage.backgroundColor ="#333";
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    game.scale.setMinMax(640, 960, 640, 960);
+    game.scale.setMinMax(320, 460, 640, 960);
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
     this.scale.forceOrientation(true, false);
