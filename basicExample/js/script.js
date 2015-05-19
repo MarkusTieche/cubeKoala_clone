@@ -100,6 +100,19 @@ function create()
     
     //ADD INPUTS
     this.cursors = game.input.keyboard.createCursorKeys();
+    
+    //MOBILE CONTROLL
+    game.input.onDown.add(function(e)
+    {
+        if(game.input.activePointer.x < this.world.width/2)
+        {
+           this.cursors.left._justDown = true;
+        }
+        else
+        {
+            this.cursors.right._justDown = true;
+        }
+    }, this);     
 }
 
 function preRender() 
